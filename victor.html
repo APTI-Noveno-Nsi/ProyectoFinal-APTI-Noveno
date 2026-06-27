@@ -6,7 +6,13 @@
     <title>UT-Search</title>
 </head>
 <body>
-    <h1>UT-Search</h1>
-    <p>Uso de API leaflet proximamente</p>
+    <div id="map"></div>
+<script>
+    var map = L.map('map').setView([51.505, -0.09], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+</script>   
+    
 </body>
 </html>
